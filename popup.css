@@ -1,0 +1,38 @@
+h3 {
+    color: navy;
+    margin: auto;
+    width: 80%;
+}
+
+a#displayTitle {
+  font-size: 14px;
+}
+
+a#displayURL {
+  font-size:10px;
+}
+
+a { color: #0077d4;}
+
+a:hover { color: #e65c00; text-decoration: none; }
+
+body {
+    min-width: 500px;
+}
+
+#imaginary_container{
+    margin-top:20%; /* Don't copy this */
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+

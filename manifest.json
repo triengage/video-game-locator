@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Video Game Locator",
+    "description": "Find your favorite Video Game",
+    "version": "1.0",
+    "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Relive your Childhood",
+    "default_popup": "popup.html"
+    },
+    "icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" },
+    "content_scripts": [
+        {
+            "css": [ "popup.css", "bootstrap.css", "datatables.css" ],
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [ "jquery.js", "content.js", "bootstrap.js", "datatables.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+    "tabs", "*://*/*", "storage"
+    ],
+    "web_accessible_resources": [
+    "css/style.css"
+    ]
+}
